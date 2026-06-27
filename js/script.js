@@ -88,6 +88,12 @@ var typedAbout = new Typed(".typing-about", {
     backDelay: 1500,
     loop: true
 });
+const navToggler = document.querySelector(".nav-toggler");
+const aside = document.querySelector(".aside");
+
+navToggler.addEventListener("click", () => {
+    aside.classList.toggle("open");
+});
 
 
 
